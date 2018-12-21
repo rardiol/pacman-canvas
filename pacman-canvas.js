@@ -248,12 +248,9 @@ function geronimo() {
 			};
 
 		this.newGame = function() {
-		    var r = confirm("Are you sure you want to restart?");
-            if (r) {
         	    console.log("new Game");
-                this.init(0);
-                this.pauseResume();
-            }
+                    this.init(0);
+                    this.pauseResume();
 		};
 
 		this.nextLevel = function() {
@@ -1533,10 +1530,8 @@ function checkAppCache() {
 				pacman.directionWatcher.set(right);
 				break;
 			case 78:	// N pressed
-			if (!$('#playerName').is(':focus')) {
 				game.pause = 1;
 				game.newGame();
-				}
 				break;
 			case 77:	// M pressed
 				game.toggleSound();
