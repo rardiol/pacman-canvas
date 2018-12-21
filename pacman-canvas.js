@@ -140,6 +140,7 @@ function geronimo() {
 		this.pause = true;
 		this.score = new Score();
 		this.soundfx = 1;
+		$('#mute').toggle();
 		this.map;
 		this.pillCount;				// number of pills
 		this.monsters;
