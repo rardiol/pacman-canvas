@@ -139,7 +139,7 @@ function geronimo() {
 		this.running = false;
 		this.pause = true;
 		this.score = new Score();
-		this.soundfx = 0;
+		this.soundfx = 1;
 		this.map;
 		this.pillCount;				// number of pills
 		this.monsters;
